@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from dotenv import load_dotenv
 # from groq import Groq
@@ -14,10 +14,18 @@ CORS(app)  # Enable CORS for all routes
 # In Stage 1, we are not making real API calls.
 # client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
+@app.route("/")
+def serve_index():
+    return send_from_directory('../frontend', 'index.html')
+
 @app.route("/health", methods=["GET"])
 def health_check():
     """A simple health check endpoint."""
     return jsonify({"status": "healthy"}), 200
+
+@app.route("/<path:filename>")
+def serve_static(filename):
+    return send_from_directory('../frontend', filename)
 
 @app.route("/api/convert", methods=["POST"])
 def convert_text():
