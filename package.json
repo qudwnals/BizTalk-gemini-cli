@@ -1,0 +1,27 @@
+{
+  "name": "biztalk",
+  "version": "1.0.0",
+  "description": "'BizTone Converter'는 직장인들이 상황과 대상에 맞는 적절한 업무용 말투를 사용하는 데 겪는 어려움을 해결하기 위해 설계된 AI 기반 웹 솔루션입니다. 이 서비스는 사용자의 일상적인 표현을 전문적인 비즈니스 언어로 자동 변환하여, 명확하고 효과적인 커뮤니케이션을 지원합니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tailwind": "npx tailwindcss -i ./frontend/css/input.css -o ./frontend/css/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qudwnals/BizTalk-gemini-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/qudwnals/BizTalk-gemini-cli/issues"
+  },
+  "homepage": "https://github.com/qudwnals/BizTalk-gemini-cli#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  }
+}
