@@ -1,5 +1,4 @@
-
- {
+{
   "builds": [
     {
       "src": "backend/app.py",
@@ -13,7 +12,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/backend/app.py"
+      "dest": "backend/app.py"
     },
     {
       "src": "/css/(.*)",
@@ -27,10 +26,5 @@
       "src": "/(.*)",
       "dest": "/frontend/index.html"
     }
-  ],
-  "env": {
-
-    "GROQ_API_KEY": "@groq_api_key"
-
-  }
+  ]
 }
