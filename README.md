@@ -18,7 +18,7 @@
 
 *   **Frontend**: HTML5, CSS3 (Flexbox/Grid), JavaScript (ES6+)
 *   **Backend**: Python, Flask (RESTful API), python-dotenv, Flask-CORS
-*   **AI**: Groq AI API
+*   **AI**: Groq AI API,GEMINI CLI
 *   **Deployment**: Vercel
 *   **Version Control**: Git, GitHub
 
